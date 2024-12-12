@@ -1,0 +1,23 @@
+[package]
+name = "axum-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = "0.5.3"
+axum = "0.7.9"
+axum-extra = { version = "0.9.6", features = ["cookie"] }
+chrono = { version = "0.4.39", features = ["serde"] }
+dotenv = "0.15.0"
+jsonwebtoken = "9.3.0"
+lette = "0.1.0"
+serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1.0.133"
+sqlx = { version = "0.8.2", features = ["runtime-async-std-native-tls", "postgres", "chrono", "uuid"] }
+time = "0.3.37"
+tokio = { version = "1.42.0", features = ["full"] }
+tower = "0.5.2"
+tower-http = { version = "0.6.2",features = ["cors", "trace"] }
+tracing-subscriber = "0.3.19"
+uuid = { version = "1.11.0", features = ["serde", "v4"] }
+validator = { version = "0.19.0", features = ["derive"] }
